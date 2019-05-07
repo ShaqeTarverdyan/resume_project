@@ -1,0 +1,110 @@
+.squarecontainer {
+    display: block;
+    position: relative;
+    padding-left: 5%;
+    margin-bottom: 1%;
+    cursor: pointer;
+    font-size: 1.5vw;
+    float:left;
+    user-select: none;
+    width:25%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left:1%; 
+ }
+  .squarecontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .squarecontainer .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    border-radius: 15%;
+    border:1px solid #2f1b15;
+  }
+
+  .squarecontainer .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .squarecontainer input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .squarecontainer .checkmark:after {
+    left: 30%;
+    bottom: 15%;
+    width: 45%;
+    height: 150%;
+    border: solid #557183;
+    border-width: 0 1px 1px 0;
+    transform: rotate(35deg);
+  }
+  .squarecontainer .text{
+    font-size:1.4vw;
+    font-weight: 900;
+  }
+
+  /* //////////////////////////////////////*/
+
+  .circleContainer {
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: 1%;
+    padding:0;
+    cursor: pointer;
+    font-size: 1vw;
+    float:left;
+    user-select: none;
+    width:22%;
+    align-items: center;
+ }
+  .circleContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width:0;
+  }
+  .circleContainer .checkmark {
+    position: absolute;
+    top: -5%;
+    left: 0;
+    height: 70%;
+    width: 9%;
+    border-radius: 50%;
+    border:1.5px solid #2f1b15;
+  }
+
+  .circleContainer .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .circleContainer input:checked ~ .checkmark:after {
+    display: flex;
+  }
+  .circleContainer .checkmark:after {
+    left: 25%;
+    bottom: 25%;
+    width: 50%;
+    height: 50%;
+    border-radius:50%;
+    background-color:#2f1b15;
+  }
+  .circleContainer .text{
+    font-size:1.2vw;
+    margin-left: 15%;
+    font-weight: 700;
+    padding-top: 1%;
+  }
